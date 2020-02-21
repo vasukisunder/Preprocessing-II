@@ -1,3 +1,31 @@
+header{
+  display: flex;
+  flex-direction: column;
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0;
+
+    border-bottom: 2px dashed @navigation-border;
+
+   
+    
+  }
+
+  .header-bottom{
+    display: flex;
+    flex-direction: column;
+
+    .intro{
+      padding: 2% 0;
+      border-bottom: 2px dashed @navigation-border;
+    }
+
+  }
+}
+
 .home {
 
   .content-section {
@@ -56,6 +84,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .button(@eastern-blue, @white);
+      }
+
+    
     }
   }
 }// home
