@@ -93,3 +93,68 @@ header{
     }
   }
 }// home
+
+@media @mobile{
+  body{
+    width: 90%;
+    margin: 0 auto;
+    img{
+      width:100%;
+    }
+  }
+
+  header{
+    .topbar{
+      flex-direction: column;
+
+      nav{
+        width: 100%;
+      }
+    }
+
+    h1, h2{
+      padding: 2% 0;
+    }
+  }
+.home{
+  display: flex;
+  flex-direction: column;
+  .content-section{
+  display: flex;
+  flex-direction: column;
+    .text-content{
+      width: 100%;
+    }
+    .img-content{
+      width: 100%;
+    }
+
+  }
+  .inverse-content{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .content-destination{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  .content-pick{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .destination{
+      width: 80%;
+      .btn{
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+}
